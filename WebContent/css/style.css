@@ -14,6 +14,8 @@ button{background: transparent;}
 
 .contents{margin-top: 90px;}
 .line-style{height: 45px; border: 1px solid; border-width: 1px 0;}
+/* 세부메뉴 border겹칩 문제 해결 */
+.line-style-notop{height: 45px; border: 1px solid; border-width: 1px 0;border-top-style: hidden;}
 
 
 
