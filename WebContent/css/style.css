@@ -1,0 +1,163 @@
+/* common */
+body{font-size: 13px}
+a, a:hover{color:#000000;}
+img, a, button, input, select{display:inline-block; border:0; outline:0;}
+button{background: transparent;}
+.container-fluid, .row, ul, li, .list-inline, .list-inline>li, h1, h2, h3, p {margin:0;padding:0;}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, 
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, 
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, 
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{padding: 10px 15px;}
+.glyphicon{font-size: 14px;}
+.lead{margin-bottom:0;}
+
+.contents{margin-top: 90px;}
+.line-style{height: 45px; border: 1px solid; border-width: 1px 0;}
+
+
+
+
+/* media */
+/* 
+@media (max-width: 991px) {
+    p{background: cadetblue;}
+}
+@media (max-width: 767px) {
+    p{background: coral;}
+} 
+*/
+
+
+
+/* header.jsp */
+header{background: white;}
+
+/* first line */
+#header-first{height:45px;}
+#header-first div{
+    height: 100%; 
+    border-right: 1px solid;
+}
+#header-first div:last-of-type{border-right:0;}
+#logo{position: relative;}
+#logo h1{
+    position: absolute;
+    left:0;
+    top:0;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+#logo a{padding: 10px 15px;}
+#logo a:hover, #logo a:active, #logo a:focus{ text-decoration: none;}
+#search input{font-size: 13px;}
+#search input::placeholder{color:#242424;}
+#btn-search{
+    margin: 3px 3px 0 0;
+    padding: 0;
+}
+#btn-search .glyphicon{top:2px;}
+#header-first-menu{position: relative; padding:0;}
+#header-first-menu>ul{
+    position: absolute;
+    right:41px;
+    top:0;
+}
+#header-first-menu>ul li:nth-of-type(2) {padding-right: 7px;}
+#header-first-menu>ul li a {padding: 13px 5px;}
+
+
+
+/* side menu */
+#btn-sidemenu{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+}
+.sidemenu{
+    position: fixed;
+    top:45px;
+    right: 0 ;
+    width: 33.38%;
+    height: 100%;
+    border: 1px solid;
+    border-width: 1px 0 1px 1px;
+    background: white;
+    overflow-y: scroll;
+    z-index: 9999;
+    transition: transform .25s ease-in-out;
+    transition-property: width, transform;
+    transform: translateX(105%);
+}
+.sidemenu.show-sidemenu{
+    transform: translateX(0);
+}
+.sidemenu li{
+    height: 45px;
+    border-bottom: 1px solid;
+    background: white;
+}
+.sidemenu li a{
+    display: block;
+    padding: 13px;
+}
+.sidemenu .glyphicon{float: right; margin-top:2px; font-size: 12px;}
+.sidemenu .go-back .glyphicon{float:left;}
+
+/* second line */
+#header-second{
+    height: 46px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#header-second li a {
+    padding: 12px 15px;
+}
+
+/* second admin line */
+#admin-second{
+    height: 46px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#admin-second li a {
+    padding: 12px 15px;
+}
+
+
+/* footer.jsp */
+/* first line */
+#last-menu>div{
+    height: 200px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-width: 0 1px 1px 0;
+}
+#last-menu>div:last-of-type{border-right: 0;}
+#last-menu .footer-h3{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+#last-menu li {
+    margin-bottom: 7px;
+}
+#q-email{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+/* second line */
+#about{
+    height: 200px;
+}
+#copyright{
+    position: relative;
+    padding: 13px 15px 13px 30px;
+    border-bottom: 0;
+}
+#copyright span{
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
