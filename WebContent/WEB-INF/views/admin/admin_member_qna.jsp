@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>re:flex</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- 부트스트랩 -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath() %>/css/bootstrap.min.css" rel="stylesheet"> <!-- 부트스트랩 -->
+    <link href="<%=request.getContextPath() %>/css/style.css" rel="stylesheet">
    
-    <script src="js/jquery-3.4.1.js"></script>
+    <script src="<%=request.getContextPath() %>/js/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/header.js"></script>
+    <script src="<%=request.getContextPath() %>/js/bootstrap.min.js"></script>
+    <script src="<%=request.getContextPath() %>/js/header.js"></script>
 </head>
 <body>
     
@@ -77,9 +80,9 @@
                 <nav id="header-second" class="line-style">
                     <h2 class="sr-only">메인메뉴</h2>
                     <ul class="list-unstyled list-inline">
-                        <li><a href="admin_item.html">상품관리</a></li>
-                        <li><a href="admin_order.html">주문관리</a></li>
-                        <li><a href="admin_member.html">회원관리</a></li>
+                        <li><a href="<%= request.getContextPath()%>/admin/productManager">상품관리</a></li>
+                        <li><a href="<%= request.getContextPath()%>/admin/orderManager">주문관리</a></li>
+                        <li><a href="<%= request.getContextPath()%>/admin/memberManager">회원관리</a></li>
                     </ul>
                 </nav>
         
@@ -88,14 +91,13 @@
                       <!-- <h2 class="sr-only">메인메뉴</h2> -->
 
                       <ul class="list-unstyled list-inline">
-                          <li><a href="admin_order.html">배송관리</a></li>
-                          <li><a href="admin_order_list.html">렌탈내역</a></li>
-                          <li><a href="admin_order_sale.html">판매현황</a></li>
+                          <li><a href="#">회원관리</a></li>
+                          <li><a href="admin_member_qna.html">1:1문의관리</a></li>
                       </ul>
 
                   </nav>
         
-                  <div>판매현황</div>
+                  <div>1:1문의관리!</div>
 
             </header>
 
